@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           {/* Logo */}
           <a href="#home" className="text-2xl font-bold gradient-text">
-            {"<KVS />"}
+            {"<Aham_kirti>"}
           </a>
 
           {/* Social Links */}
