@@ -154,8 +154,16 @@ const CodingProfilesSection = () => {
 
         {/* Awards */}
         <div className="mt-12">
-          <h3 className="text-xl font-bold text-foreground mb-6 text-center">Platform Badges</h3>
+          <h3 className="text-xl font-bold text-foreground mb-6 text-center">Platform Badges & Achievements</h3>
           <div className="flex flex-wrap justify-center gap-6">
+            <div className="glass-card p-4 flex items-center gap-3 hover-glow">
+              <div className="flex text-yellow-400">
+                <span className="text-2xl">★</span>
+                <span className="text-2xl">★</span>
+                <span className="text-2xl">★</span>
+              </div>
+              <span className="text-foreground font-medium">3 Star @ CodeChef</span>
+            </div>
             <div className="glass-card p-4 flex items-center gap-3 hover-glow">
               <img src="https://hrcdn.net/fcore/assets/badges/python-f70befd824.svg" alt="Python" className="w-10 h-10" />
               <span className="text-foreground font-medium">Python</span>
