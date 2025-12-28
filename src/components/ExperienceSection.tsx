@@ -2,6 +2,15 @@ import { Calendar, Award, Users, Trophy } from "lucide-react";
 
 const experiences = [
   {
+    title: "Technical Coordinator",
+    organization: "GFGCB_GCET (GeeksforGeeks Campus Club)",
+    period: "2024 – Present",
+    description:
+      "Leading technical initiatives, organizing coding workshops, managing technical events, and mentoring fellow students in DSA and development.",
+    icon: Award,
+    type: "leadership",
+  },
+  {
     title: "Member",
     organization: "LOOP Coding Club - GALGOTIAS",
     period: "August 2024 – Present",
@@ -16,7 +25,7 @@ const experiences = [
     period: "August 2024 – Present",
     description:
       "Part of the Google Developer community, learning about Google technologies and participating in community events.",
-    icon: Award,
+    icon: Users,
     type: "involvement",
   },
 ];
