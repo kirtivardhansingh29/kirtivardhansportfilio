@@ -14,9 +14,9 @@ const skillCategories = [
     name: "Web Technologies",
     skills: [
       { name: "HTML/CSS", level: 90, color: "from-orange-400 to-red-500" },
-      { name: "React", level: 65, color: "from-cyan-400 to-blue-500" },
-      { name: "Node.js", level: 60, color: "from-green-400 to-green-600" },
-      { name: "PostgreSQL", level: 55, color: "from-blue-500 to-indigo-600" },
+      { name: "React", level: 40, color: "from-cyan-400 to-blue-500" },
+      { name: "Tailwind CSS", level: 60, color: "from-teal-400 to-cyan-500" },
+      { name: "JavaScript", level: 65, color: "from-yellow-300 to-orange-500" },
     ],
   },
   {
