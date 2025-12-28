@@ -154,27 +154,34 @@ const CodingProfilesSection = () => {
 
         {/* Awards */}
         <div className="mt-12">
-          <h3 className="text-xl font-bold text-foreground mb-6 text-center">Platform Badges & Achievements</h3>
+          <h3 className="text-xl font-bold text-foreground mb-6 text-center">HackerRank Badges</h3>
           <div className="flex flex-wrap justify-center gap-6">
             <div className="glass-card p-4 flex items-center gap-3 hover-glow">
-              <div className="flex text-yellow-400">
-                <span className="text-2xl">★</span>
-                <span className="text-2xl">★</span>
-                <span className="text-2xl">★</span>
-              </div>
-              <span className="text-foreground font-medium">3 Star @ CodeChef</span>
-            </div>
-            <div className="glass-card p-4 flex items-center gap-3 hover-glow">
               <img src="https://hrcdn.net/fcore/assets/badges/python-f70befd824.svg" alt="Python" className="w-10 h-10" />
-              <span className="text-foreground font-medium">Python</span>
+              <div>
+                <span className="text-foreground font-medium block">Python</span>
+                <div className="flex text-yellow-400 text-sm">
+                  <span>★</span><span>★</span><span>★</span>
+                </div>
+              </div>
             </div>
             <div className="glass-card p-4 flex items-center gap-3 hover-glow">
               <img src="https://hrcdn.net/fcore/assets/badges/cpp-739b350881.svg" alt="C++" className="w-10 h-10" />
-              <span className="text-foreground font-medium">C++</span>
+              <div>
+                <span className="text-foreground font-medium block">C++</span>
+                <div className="flex text-yellow-400 text-sm">
+                  <span>★</span><span>★</span><span>★</span>
+                </div>
+              </div>
             </div>
             <div className="glass-card p-4 flex items-center gap-3 hover-glow">
               <img src="https://hrcdn.net/fcore/assets/badges/problem-solving-ecaf59a612.svg" alt="Problem Solving" className="w-10 h-10" />
-              <span className="text-foreground font-medium">Problem Solving</span>
+              <div>
+                <span className="text-foreground font-medium block">Problem Solving</span>
+                <div className="flex text-yellow-400 text-sm">
+                  <span>★</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
