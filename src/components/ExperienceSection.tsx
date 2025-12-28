@@ -1,4 +1,7 @@
 import { Calendar, Award, Users, Trophy } from "lucide-react";
+import loopLogo from "@/assets/loop-logo.png";
+import gfgLogo from "@/assets/gfg-logo.svg";
+import gdscLogo from "@/assets/gdsc-logo.png";
 
 const experiences = [
   {
@@ -9,6 +12,7 @@ const experiences = [
       "Leading technical initiatives, organizing coding workshops, managing technical events, and mentoring fellow students in DSA and development.",
     icon: Award,
     type: "leadership",
+    logo: gfgLogo,
   },
   {
     title: "Member",
@@ -18,6 +22,7 @@ const experiences = [
       "Active member of the college coding club, participating in coding events, hackathons, and collaborative programming sessions.",
     icon: Users,
     type: "involvement",
+    logo: loopLogo,
   },
   {
     title: "Member",
@@ -27,6 +32,7 @@ const experiences = [
       "Part of the Google Developer community, learning about Google technologies and participating in community events.",
     icon: Users,
     type: "involvement",
+    logo: gdscLogo,
   },
 ];
 
@@ -78,11 +84,23 @@ const ExperienceSection = () => {
                   
                   <div className="glass-card p-6 hover-glow transition-all duration-300">
                     <div className="flex items-start gap-4">
-                      <div className="p-3 rounded-xl bg-primary/10">
-                        <exp.icon className="w-6 h-6 text-primary" />
+                      {/* Club Logo */}
+                      <div className="w-14 h-14 rounded-xl bg-white/10 flex items-center justify-center p-2 shrink-0">
+                        <img 
+                          src={exp.logo} 
+                          alt={exp.organization} 
+                          className="w-full h-full object-contain"
+                        />
                       </div>
                       <div className="flex-1">
-                        <h4 className="font-bold text-foreground">{exp.title}</h4>
+                        <div className="flex items-center gap-2 flex-wrap">
+                          <h4 className="font-bold text-foreground">{exp.title}</h4>
+                          {exp.type === "leadership" && (
+                            <span className="px-2 py-0.5 text-xs rounded-full bg-primary/20 text-primary border border-primary/30">
+                              Leadership
+                            </span>
+                          )}
+                        </div>
                         <p className="text-primary font-semibold text-sm">{exp.organization}</p>
                         <p className="text-muted-foreground text-xs mt-1">{exp.period}</p>
                         <p className="text-muted-foreground text-sm mt-3">{exp.description}</p>
@@ -94,7 +112,7 @@ const ExperienceSection = () => {
             </div>
           </div>
 
-          {/* Achievements */}
+          {/* Achievements & Clubs */}
           <div className="space-y-8">
             <h3 className="text-xl font-bold text-foreground mb-6 flex items-center gap-2">
               <Trophy className="w-5 h-5 text-primary" />
@@ -120,19 +138,27 @@ const ExperienceSection = () => {
               ))}
             </div>
 
-            {/* College Info Card */}
-            <div className="glass-card p-6 hover-glow">
-              <div className="flex items-center gap-4">
-                <img
-                  src="https://kirtivardhansinghportfili.netlify.app/loop.png"
-                  alt="LOOP Club"
-                  className="w-16 h-16 rounded-xl object-contain bg-white/10 p-2"
-                />
-                <div>
-                  <h4 className="font-bold text-foreground">LOOP Coding Club</h4>
-                  <p className="text-muted-foreground text-sm">
-                    Official coding club of GALGOTIAS College of Engineering
-                  </p>
+            {/* Club Logos Showcase */}
+            <div className="glass-card p-6">
+              <h4 className="font-bold text-foreground mb-4">Organizations</h4>
+              <div className="flex items-center justify-around gap-4">
+                <div className="group flex flex-col items-center gap-2">
+                  <div className="w-16 h-16 rounded-xl bg-white/10 p-3 group-hover:bg-white/20 transition-colors">
+                    <img src={gfgLogo} alt="GFG" className="w-full h-full object-contain" />
+                  </div>
+                  <span className="text-xs text-muted-foreground">GFG</span>
+                </div>
+                <div className="group flex flex-col items-center gap-2">
+                  <div className="w-16 h-16 rounded-xl bg-white/10 p-3 group-hover:bg-white/20 transition-colors">
+                    <img src={loopLogo} alt="LOOP" className="w-full h-full object-contain" />
+                  </div>
+                  <span className="text-xs text-muted-foreground">LOOP</span>
+                </div>
+                <div className="group flex flex-col items-center gap-2">
+                  <div className="w-16 h-16 rounded-xl bg-white/10 p-3 group-hover:bg-white/20 transition-colors">
+                    <img src={gdscLogo} alt="GDSC" className="w-full h-full object-contain" />
+                  </div>
+                  <span className="text-xs text-muted-foreground">GDSC</span>
                 </div>
               </div>
             </div>
