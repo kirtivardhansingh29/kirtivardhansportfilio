@@ -1,4 +1,11 @@
-import { Code2, Brain, Rocket, Users } from "lucide-react";
+import { Code2, Brain, Rocket, Users, Target, Trophy, Flame, Calendar } from "lucide-react";
+
+const stats = [
+  { label: "Problems Solved", value: "242+", icon: Target },
+  { label: "Active Days", value: "62", icon: Calendar },
+  { label: "Max Streak", value: "18", icon: Flame },
+  { label: "Contests", value: "7", icon: Trophy },
+];
 
 const highlights = [
   {
@@ -37,29 +44,24 @@ const AboutSection = () => {
           {/* Text Content */}
           <div className="space-y-6">
             <p className="text-lg text-muted-foreground leading-relaxed">
-              I am a highly motivated <span className="text-primary font-semibold">2nd-year B.Tech student</span> specializing in Information Technology. My core interests lie at the intersection of robust Full-Stack Development, Agentic AI, and Machine Learning.
+              I am a highly motivated <span className="text-primary font-semibold">2nd-year B.Tech IT student</span> at Galgotias College of Engineering and Technology (GCET). My core interests lie at the intersection of robust Full-Stack Development, Agentic AI, and Machine Learning.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
               I am dedicated to building <span className="text-primary font-semibold">efficient, scalable applications</span> and thrive in collaborative environments, constantly seeking opportunities to learn new technologies and contribute to open-source projects.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              I actively participate in <span className="text-primary font-semibold">coding competitions</span> and technical communities, pushing myself to grow as a developer every day.
+              As a <span className="text-primary font-semibold">Technical Coordinator at GFGCB_GCET</span>, I actively participate in coding competitions, organize technical events, and mentor fellow students in DSA and development.
             </p>
 
-            {/* Stats */}
-            <div className="grid grid-cols-3 gap-4 pt-6">
-              <div className="glass-card p-4 text-center hover-glow">
-                <p className="text-3xl font-bold gradient-text">5+</p>
-                <p className="text-sm text-muted-foreground">Projects</p>
-              </div>
-              <div className="glass-card p-4 text-center hover-glow">
-                <p className="text-3xl font-bold gradient-text">2+</p>
-                <p className="text-sm text-muted-foreground">Years Coding</p>
-              </div>
-              <div className="glass-card p-4 text-center hover-glow">
-                <p className="text-3xl font-bold gradient-text">100+</p>
-                <p className="text-sm text-muted-foreground">Commits</p>
-              </div>
+            {/* Stats Grid */}
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-6">
+              {stats.map((stat) => (
+                <div key={stat.label} className="glass-card p-4 text-center hover-glow">
+                  <stat.icon className="w-5 h-5 text-primary mx-auto mb-2" />
+                  <p className="text-2xl font-bold gradient-text">{stat.value}</p>
+                  <p className="text-xs text-muted-foreground">{stat.label}</p>
+                </div>
+              ))}
             </div>
           </div>
 

@@ -22,8 +22,8 @@ const ContactSection = () => {
   const socialLinks = [
     {
       name: "Email",
-      value: "kirtivardhans001@email.com",
-      href: "mailto:kirtivardhans001@email.com",
+      value: "kirtivardhans001@gmail.com",
+      href: "mailto:kirtivardhans001@gmail.com",
       icon: Mail,
     },
     {
