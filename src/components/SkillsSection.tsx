@@ -5,9 +5,9 @@ const skillCategories = [
     name: "Languages",
     skills: [
       { name: "Python", level: 85, color: "from-yellow-400 to-yellow-600" },
-      { name: "C++", level: 75, color: "from-blue-400 to-blue-600" },
+      { name: "C++", level: 80, color: "from-blue-400 to-blue-600" },
       { name: "JavaScript", level: 70, color: "from-yellow-300 to-orange-500" },
-      { name: "SQL", level: 70, color: "from-cyan-400 to-cyan-600" },
+      { name: "SQL", level: 75, color: "from-cyan-400 to-cyan-600" },
     ],
   },
   {
@@ -22,17 +22,18 @@ const skillCategories = [
   {
     name: "Tools & Libraries",
     skills: [
-      { name: "Git/GitHub", level: 80, color: "from-gray-400 to-gray-600" },
-      { name: "Pandas/NumPy", level: 75, color: "from-purple-400 to-purple-600" },
-      { name: "MySQL", level: 70, color: "from-blue-400 to-cyan-500" },
+      { name: "Git/GitHub", level: 85, color: "from-gray-400 to-gray-600" },
+      { name: "Pandas/NumPy", level: 80, color: "from-purple-400 to-purple-600" },
+      { name: "MySQL", level: 75, color: "from-blue-400 to-cyan-500" },
     ],
   },
   {
-    name: "Soft Skills",
+    name: "DSA & Problem Solving",
     skills: [
-      { name: "Public Speaking", level: 85, color: "from-pink-400 to-rose-500" },
-      { name: "Management", level: 80, color: "from-indigo-400 to-purple-500" },
-      { name: "Social Media", level: 75, color: "from-cyan-400 to-teal-500" },
+      { name: "Arrays & Strings", level: 85, color: "from-green-400 to-emerald-500" },
+      { name: "Sorting & Searching", level: 80, color: "from-cyan-400 to-teal-500" },
+      { name: "Data Structures", level: 75, color: "from-purple-400 to-pink-500" },
+      { name: "Algorithms", level: 70, color: "from-orange-400 to-red-500" },
     ],
   },
 ];

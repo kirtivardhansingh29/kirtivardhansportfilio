@@ -92,7 +92,7 @@ const HeroSection = () => {
             {/* Social Links */}
             <div className="flex items-center justify-center lg:justify-start gap-4">
               <a
-                href="mailto:kirtivardhans001@email.com"
+                href="mailto:kirtivardhans001@gmail.com"
                 className="glass-card p-3 hover-glow transition-all duration-300 hover:scale-110"
               >
                 <Mail className="w-5 h-5 text-primary" />
