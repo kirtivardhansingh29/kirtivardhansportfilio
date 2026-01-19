@@ -41,8 +41,8 @@ const codingProfiles = [
   },
   {
     name: "Codolio",
-    username: "aham_kirti666",
-    url: "https://codolio.com/profile/aham_kirti666",
+    username: "Aham_kirti",
+    url: "https://codolio.com/profile/Aham_kirti",
     stats: "Global Rank: 14542",
     color: "from-orange-500 to-red-500",
     icon: "https://codolio.com/favicon.ico",
