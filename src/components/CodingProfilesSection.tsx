@@ -41,9 +41,9 @@ const codingProfiles = [
   },
   {
     name: "Codolio",
-    username: "Aham_kirti",
-    url: "https://codolio.com/profile/Aham_kirti",
-    stats: "Global Rank: 14542",
+    username: "aham_kirti666",
+    url: "https://codolio.com/profile/aham_kirti666",
+    stats: "Global Rank: 16211",
     color: "from-orange-500 to-red-500",
     icon: "https://codolio.com/favicon.ico",
   },
@@ -82,15 +82,15 @@ const CodingProfilesSection = () => {
         <div className="glass-card p-6 mb-12">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             <div>
-              <p className="text-3xl font-bold gradient-text">242+</p>
+              <p className="text-3xl font-bold gradient-text">250+</p>
               <p className="text-sm text-muted-foreground">Total Problems</p>
             </div>
             <div>
-              <p className="text-3xl font-bold gradient-text">7</p>
+              <p className="text-3xl font-bold gradient-text">10</p>
               <p className="text-sm text-muted-foreground">Contests</p>
             </div>
             <div>
-              <p className="text-3xl font-bold gradient-text">324</p>
+              <p className="text-3xl font-bold gradient-text">333</p>
               <p className="text-sm text-muted-foreground">Submissions</p>
             </div>
             <div>
