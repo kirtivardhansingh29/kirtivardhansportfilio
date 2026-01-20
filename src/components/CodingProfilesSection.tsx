@@ -20,7 +20,7 @@ const codingProfiles = [
     name: "CodeChef",
     username: "aham_kirti666",
     url: "https://www.codechef.com/users/aham_kirti666",
-    stats: "Rating: 1093 | 133 Problems",
+    stats: "Rating: 1125 | 137 Problems",
     color: "from-amber-600 to-yellow-700",
     icon: "https://cdn.codechef.com/images/cc-logo.svg",
   },
@@ -43,7 +43,7 @@ const codingProfiles = [
     name: "Codolio",
     username: "aham_kirti666",
     url: "https://codolio.com/profile/aham_kirti666",
-    stats: "Global Rank: 16211",
+    stats: "Global Rank: 16309",
     color: "from-orange-500 to-red-500",
     icon: "https://codolio.com/favicon.ico",
   },
@@ -74,7 +74,7 @@ const CodingProfilesSection = () => {
           <h2 className="section-title mb-4">Coding Profiles</h2>
           <div className="w-24 h-1 bg-gradient-primary mx-auto rounded-full" />
           <p className="text-muted-foreground mt-6 max-w-2xl mx-auto">
-            Active on multiple competitive programming platforms with <span className="text-primary font-semibold">242+ problems solved</span> and growing!
+            Active on multiple competitive programming platforms with <span className="text-primary font-semibold">254 problems solved</span> and growing!
           </p>
         </div>
 
@@ -82,7 +82,7 @@ const CodingProfilesSection = () => {
         <div className="glass-card p-6 mb-12">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             <div>
-              <p className="text-3xl font-bold gradient-text">250+</p>
+              <p className="text-3xl font-bold gradient-text">254</p>
               <p className="text-sm text-muted-foreground">Total Problems</p>
             </div>
             <div>
@@ -90,7 +90,7 @@ const CodingProfilesSection = () => {
               <p className="text-sm text-muted-foreground">Contests</p>
             </div>
             <div>
-              <p className="text-3xl font-bold gradient-text">333</p>
+              <p className="text-3xl font-bold gradient-text">337</p>
               <p className="text-sm text-muted-foreground">Submissions</p>
             </div>
             <div>
