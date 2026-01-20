@@ -1,10 +1,10 @@
 import { Code2, Brain, Rocket, Users, Target, Trophy, Flame, Calendar } from "lucide-react";
 
 const stats = [
-  { label: "Problems Solved", value: "242+", icon: Target },
-  { label: "Active Days", value: "62", icon: Calendar },
+  { label: "Problems Solved", value: "254", icon: Target },
+  { label: "Active Days", value: "67", icon: Calendar },
   { label: "Max Streak", value: "18", icon: Flame },
-  { label: "Contests", value: "7", icon: Trophy },
+  { label: "Contests", value: "10", icon: Trophy },
 ];
 
 const highlights = [
