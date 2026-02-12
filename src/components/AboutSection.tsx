@@ -1,11 +1,5 @@
 import { Code2, Brain, Rocket, Users, Target, Trophy, Flame, Calendar } from "lucide-react";
-
-const stats = [
-  { label: "Problems Solved", value: "254", icon: Target },
-  { label: "Active Days", value: "67", icon: Calendar },
-  { label: "Max Streak", value: "18", icon: Flame },
-  { label: "Contests", value: "10", icon: Trophy },
-];
+import { useCodolioStats } from "@/hooks/useCodolioStats";
 
 const highlights = [
   {
@@ -31,6 +25,15 @@ const highlights = [
 ];
 
 const AboutSection = () => {
+  const codolioStats = useCodolioStats();
+
+  const stats = [
+    { label: "Problems Solved", value: codolioStats.totalProblems, icon: Target },
+    { label: "Active Days", value: codolioStats.activeDays, icon: Calendar },
+    { label: "Max Streak", value: codolioStats.maxStreak, icon: Flame },
+    { label: "Contests", value: codolioStats.contests, icon: Trophy },
+  ];
+
   return (
     <section id="about" className="relative py-24 px-4">
       <div className="container max-w-6xl mx-auto">
