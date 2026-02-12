@@ -1,73 +1,47 @@
-# Welcome to your Lovable project
+# 🚀 Kirti Vardhan | Full-Stack Developer & ML Enthusiast
 
-## Project info
+Welcome to my personal portfolio! This project is a professional showcase of my journey as a Full-Stack Developer and Machine Learning enthusiast, built to be high-performing, responsive, and "lovable."
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+**🔗 Live Demo:** [https://kirtivardhansportfilio.vercel.app/](https://kirtivardhansportfilio.vercel.app/)
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## ✨ Features
 
-**Use Lovable**
+- **Modern UI/UX:** A sleek, dark-themed interface built with a focus on readability and smooth user experience.
+- **Dynamic Projects Showcase:** Detailed cards highlighting my work in Full-Stack development and AI/ML.
+- **Responsive Design:** Fully optimized for all screen sizes—from mobile devices to ultra-wide monitors.
+- **Interactive Elements:** Smooth transitions and hover effects using modern CSS/JS.
+- **Contact Integration:** Easy-to-use contact section for professional inquiries.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🛠️ Tech Stack
 
-**Use your preferred IDE**
+**Frontend:**
+- **Framework:** React.js / Next.js (Ensures fast loading and SEO optimization)
+- **Styling:** Tailwind CSS (For a utility-first, clean design)
+- **Icons:** Lucide-React / FontAwesome
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+**Backend & Deployment:**
+- **Hosting:** Vercel (CI/CD integrated)
+- **Version Control:** Git & GitHub
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+**Specialties Featured:**
+- Full-Stack Web Development
+- Machine Learning Models
+- System Architecture Design
 
-Follow these steps:
+---
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## 📂 Project Structure
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+```text
+├── public/          # Static assets (images, icons, resume)
+├── src/
+│   ├── components/  # Reusable UI components (Navbar, ProjectCard, etc.)
+│   ├── sections/    # Main page sections (About, Experience, Projects)
+│   ├── styles/      # Global CSS and Tailwind configurations
+│   └── App.js       # Main application entry point
+├── package.json     # Project dependencies and scripts
+└── README.md        # Project documentation
