@@ -1,4 +1,5 @@
 import { ExternalLink } from "lucide-react";
+import { useCodolioStats } from "@/hooks/useCodolioStats";
 
 const codingProfiles = [
   {
@@ -63,6 +64,13 @@ const dsaTopics = [
 ];
 
 const CodingProfilesSection = () => {
+  const stats = useCodolioStats();
+
+  // Update Codolio profile stats dynamically
+  const profiles = codingProfiles.map(p =>
+    p.name === "Codolio" ? { ...p, stats: `Global Rank: ${stats.globalRank}` } : p
+  );
+
   return (
     <section id="coding-profiles" className="relative py-24 px-4">
       {/* Background gradient */}
@@ -74,7 +82,7 @@ const CodingProfilesSection = () => {
           <h2 className="section-title mb-4">Coding Profiles</h2>
           <div className="w-24 h-1 bg-gradient-primary mx-auto rounded-full" />
           <p className="text-muted-foreground mt-6 max-w-2xl mx-auto">
-            Active on multiple competitive programming platforms with <span className="text-primary font-semibold">254 problems solved</span> and growing!
+            Active on multiple competitive programming platforms with <span className="text-primary font-semibold">{stats.totalProblems} problems solved</span> and growing!
           </p>
         </div>
 
@@ -82,19 +90,19 @@ const CodingProfilesSection = () => {
         <div className="glass-card p-6 mb-12">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             <div>
-              <p className="text-3xl font-bold gradient-text">254</p>
+              <p className="text-3xl font-bold gradient-text">{stats.totalProblems}</p>
               <p className="text-sm text-muted-foreground">Total Problems</p>
             </div>
             <div>
-              <p className="text-3xl font-bold gradient-text">10</p>
+              <p className="text-3xl font-bold gradient-text">{stats.contests}</p>
               <p className="text-sm text-muted-foreground">Contests</p>
             </div>
             <div>
-              <p className="text-3xl font-bold gradient-text">337</p>
+              <p className="text-3xl font-bold gradient-text">{stats.submissions}</p>
               <p className="text-sm text-muted-foreground">Submissions</p>
             </div>
             <div>
-              <p className="text-3xl font-bold gradient-text">18</p>
+              <p className="text-3xl font-bold gradient-text">{stats.maxStreak}</p>
               <p className="text-sm text-muted-foreground">Max Streak</p>
             </div>
           </div>
@@ -102,7 +110,7 @@ const CodingProfilesSection = () => {
 
         {/* Profiles Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
-          {codingProfiles.map((profile) => (
+          {profiles.map((profile) => (
             <a
               key={profile.name}
               href={profile.url}
